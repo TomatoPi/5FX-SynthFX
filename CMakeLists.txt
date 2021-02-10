@@ -11,6 +11,7 @@ add_executable(${PROJECT_NAME}
   ${SOURCES} ${HEADERS}
   src/SynthFX.cpp)
 
+target_link_libraries(${PROJECT_NAME} JackWrap)
 target_link_libraries(${PROJECT_NAME} jack)
 target_link_libraries(${PROJECT_NAME} lo)
 
